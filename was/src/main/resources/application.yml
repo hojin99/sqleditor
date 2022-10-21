@@ -1,0 +1,19 @@
+server:
+  port: 10011
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:10010/se_db
+    username: ol
+    password: djsjffkdlwj!1
+
+mybatis:
+  mapper-locations: mapper/*Mapper.xml
+  configuration:
+    default-statement-timeout: 300
+    map-underscore-to-camel-case: true
+    jdbc-type-for-null: null
+    call-setters-on-nulls: true
+  configuration-properties:
+    schema-name: public.
+  type-aliases-package: com.hj.ol.model

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hj.se.mapper.BldMapper">
+
+    <select id="getBldListLike" resultType="java.util.LinkedHashMap">
+        SELECT bld_adm_cd, bld_name, addr, utmk_x, utmk_y 
+        FROM public.tm_bld
+        where bld_name like '%' || #{bldName} || '%'
+    </select>
+
+</mapper>

@@ -1,0 +1,17 @@
+### IntelliJ IDEA ###
+.idea/
+*.iws
+*.iml
+*.ipr
+
+### VS Code ###
+.vscode/
+
+### was ###
+**/target/
+**/src/main/resources/static/*
+
+### webapp ###
+**/src/main/webapp/node_modules/*
+**/src/main/webapp/dist/*
+
