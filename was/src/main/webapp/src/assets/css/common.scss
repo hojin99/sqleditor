@@ -1,0 +1,13 @@
+$hj-line-color: #aaa;
+
+@mixin hj-absolute($top, $right, $bottom, $left) {
+    position: absolute;
+    left: $left;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+}
+
+@mixin hj-absolute-fill() {
+    @include hj-absolute(0, 0, 0, 0);
+}
