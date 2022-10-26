@@ -13,7 +13,7 @@
         :options="tabSplitOptions"
       >
         <div class="hj-editor-area">
-          editor
+          <SqlEditorEditor></SqlEditorEditor>
         </div>
         <div class="hj-output-area">
           grid
@@ -25,9 +25,13 @@
 
 <script>
 import SplitBar from '../common/SplitBar.vue';
+import SqlEditorEditor from '@/components/sqleditor/SqlEditorEditor.vue'
 
 export default {
-  components: { SplitBar },
+  components: { 
+    SplitBar,
+    SqlEditorEditor 
+  },
   data() {
     return {
       outerSplitOptions: {
